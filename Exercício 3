@@ -1,0 +1,27 @@
+Escreva um programa que verifica os hábitos de saúde de uma pessoa com três questões.
+# → Em cada questão, “S” ou “s” significa “Sim” e outra tecla significa “Não”.
+# → Primeiramente, o programa pergunta se a pessoa faz atividade física.
+# → A segunda pergunta é se a pessoa dorme pelo menos 8h por dia.
+# → A última pergunta é se a pessoa tem uma boa rotina alimentar.
+# → Para cada pergunta, se a resposta for positiva, mostre uma mensagem de parabéns.
+# → Para cada pergunta, se a resposta for negativa, dê um conselho para a pessoa. Todas as condicionais são independentes.
+
+resposta = print("Para cada pergunta a seguir digite S para sim e qualqer outra tecla para não \n")
+
+resposta = input("Você faz atividade física regurlamente ?\n")
+if resposta == "S" or resposta == "s":
+  print("Parabéns continue assim")
+else :
+  print("Esta na hora de começar")
+
+resposta = input("Você dorme pelo menos 8 horas por dia ? \n")
+if resposta == "S" or resposta == "s": 
+  print("Muito bem")
+else : 
+  print("Trabalha com Ti né ?")
+
+resposta = input("Você tem uma boa alimentação?\n")
+if resposta == "S" or resposta == "s":
+  print("Parabéns")
+else :
+  print("Cuidado! uma boa alimentação é a base para uma vida saudável")
