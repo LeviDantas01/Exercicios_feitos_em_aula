@@ -1,0 +1,21 @@
+Escreva um programa que o usuário informa a sigla de um estado (por ex.: BA, CE, PE).
+# → O programa então informa qual é a capital daquele estado.
+# → Faça para 5 estados quaisquer.
+# → Se o usuário informar algo errado, diga que a opção é inválida.
+# → Ao final, exiba uma mensagem de fim de programa.
+
+estado = input("Escolha um estado:\n 1)BA\n 2)SP\n 3)MG\n 4)AM\n 5)PE\n")
+
+if estado == "1":
+  print("A capital é Salvador")
+
+elif estado == "2":
+  print("A capital é São Paulo") 
+elif estado == "3":
+  print("A capital é Belo Horizonte")
+elif estado == "4":
+  print("A capital é Manaus")
+elif estado == "5":
+  print("A capital é Recife")
+else :
+  print("Opição invalida")
