@@ -1,0 +1,33 @@
+Escreva um programa que a pessoa possua saldo inicial de R$5000,00 para uma viagem.
+# → Inicialmente, o programa apresenta duas opções para o usuário viajar: (1) Brasil ou (2) Exterior.
+# → Se o usuário escolher a viagem dentro do país, em seguida deve informar se quer viajar de (1) avião ou (2) cruzeiro.
+# → Se escolher avião, subtraia R$1000,00 do saldo.
+# → Se escolher cruzeiro, subtraia R$5000,00 do saldo. 
+# → Caso o usuário queira a viagem internacional, deve informar se quer viajar de (1) classe econômica ou (2) primeira classe.
+# → Se escolher classe econômica, subtraia R$2000,00 do saldo.
+# → Se a escolha for primeira classe, subtraia R$4000,00 do saldo.
+# → No final, mostre uma mensagem com o saldo restante
+
+print("Você possui um saldo inicial de R$ 5000.00 \n")
+local = input("Para onde deseja viajar?\n 1)Brasil\n 2)Exterior\n")
+
+saldo = 5000.00 
+
+if local == "1":
+  modo = input(" 1)Avião\n 2)Cruzeiro\n")
+  if modo == "1":
+    print(f"Saldo restaante: R$ {saldo - 1000.00}")
+  elif modo == "2":
+    print(f"Saldo restante: R$ {saldo - 5000.00}")
+  else:
+    print("Opção invalida")
+
+if local == "2":
+  modo = input(" 1)Classe econômica\n 2)1° classe\n")
+  if modo == "1":
+    print(f"Saldo restante R$ {saldo - 2000.00}")
+  elif modo == "2":
+    print(f"Saldo restante R$ {saldo - 4000.00}")
+
+  else:
+    print("Opção invalida")
